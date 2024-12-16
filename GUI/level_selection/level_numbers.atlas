@@ -1,0 +1,28 @@
+images {
+  image: "/graphics/level numbers/1.png"
+}
+images {
+  image: "/graphics/level numbers/2.png"
+}
+images {
+  image: "/graphics/level numbers/3.png"
+}
+images {
+  image: "/graphics/level numbers/4.png"
+}
+images {
+  image: "/graphics/level numbers/5.png"
+}
+images {
+  image: "/graphics/level numbers/6.png"
+}
+images {
+  image: "/graphics/level numbers/7.png"
+}
+images {
+  image: "/graphics/level numbers/8.png"
+}
+images {
+  image: "/graphics/level numbers/9.png"
+}
+extrude_borders: 2

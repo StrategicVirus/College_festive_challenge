@@ -1,0 +1,34 @@
+images {
+  image: "/graphics/level_images/bg.png"
+}
+images {
+  image: "/graphics/level_images/coin.png"
+}
+images {
+  image: "/graphics/level_images/earthlike_planet.png"
+}
+images {
+  image: "/graphics/level_images/gas_planet.png"
+}
+images {
+  image: "/graphics/level_images/ground01.png"
+}
+images {
+  image: "/graphics/level_images/ground02.png"
+}
+images {
+  image: "/graphics/level_images/heart.png"
+}
+images {
+  image: "/graphics/level_images/ice_planet.png"
+}
+images {
+  image: "/graphics/level_images/ring_planet.png"
+}
+images {
+  image: "/graphics/level_images/rock_planks.png"
+}
+images {
+  image: "/graphics/level_images/spikes.png"
+}
+extrude_borders: 2

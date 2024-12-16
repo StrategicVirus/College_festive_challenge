@@ -1,0 +1,45 @@
+animations {
+  id: "chara_left"
+  images {
+    image: "/graphics/character/Chara1_left_anim_1.png"
+  }
+  images {
+    image: "/graphics/character/Chara1_left_anim_2.png"
+  }
+  images {
+    image: "/graphics/character/Chara1_left_anim_3.png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 3
+}
+animations {
+  id: "chara_right"
+  images {
+    image: "/graphics/character/Chara1_right_anim1.png"
+  }
+  images {
+    image: "/graphics/character/Chara1_right_anim_2.png"
+  }
+  images {
+    image: "/graphics/character/Chara1_right_anim_3.png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 3
+}
+animations {
+  id: "chara_still_left"
+  images {
+    image: "/graphics/character/Chara1_still_left.png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 3
+}
+animations {
+  id: "chara_still_right"
+  images {
+    image: "/graphics/character/Chara1_still_right.png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 3
+}
+extrude_borders: 2

@@ -1,0 +1,132 @@
+function init(self)
+	msg.post(".", "acquire_input_focus")
+
+	msg.post("#level_select", "load")
+	self.current_collection = "#level_select"
+	self.current_level = 0
+end
+
+function final(self)
+	-- Add finalization code here
+	-- Learn more: https://defold.com/manuals/script/
+	-- Remove this function if not needed
+end
+
+function update(self, dt)
+	-- Add update code here
+	-- Learn more: https://defold.com/manuals/script/
+	-- Remove this function if not needed
+end
+
+function fixed_update(self, dt)
+	-- This function is called if 'Fixed Update Frequency' is enabled in the Engine section of game.project
+	-- Can be coupled with fixed updates of the physics simulation if 'Use Fixed Timestep' is enabled in
+	-- Physics section of game.project
+	-- Add update code here
+	-- Learn more: https://defold.com/manuals/script/
+	-- Remove this function if not needed
+end
+
+function on_message(self, message_id, message, sender)
+	if message_id == hash("proxy_loaded") then
+		msg.post(sender, "enable")
+
+	elseif message_id == hash("show_select")  then
+		msg.post(self.current_collection, "unload")
+		msg.post("#level_select", "load")
+		self.current_collection = "#level_select"		
+		
+	elseif message_id == hash("level_1")  then
+		msg.post(self.current_collection, "unload")
+		msg.post("#level_1", "load")
+		self.current_collection = "#level_1"
+		
+	elseif message_id == hash("level_2")  then
+		msg.post(self.current_collection, "unload")
+		msg.post("#level_2", "load")
+		self.current_collection = "#level_2"	
+			
+	elseif message_id == hash("level_3")  then
+		msg.post(self.current_collection, "unload")
+		msg.post("#level_3", "load")
+		self.current_collection = "#level_3"		
+	elseif message_id == hash("level_4")  then
+		msg.post(self.current_collection, "unload")
+		msg.post("#level_4", "load")
+		self.current_collection = "#level_4"		
+	elseif message_id == hash("level_5")  then
+		msg.post(self.current_collection, "unload")
+		msg.post("#level_5", "load")
+		self.current_collection = "#level_5"		
+	elseif message_id == hash("level_6")  then
+		msg.post(self.current_collection, "unload")
+		msg.post("#level_6", "load")
+		self.current_collection = "#level_6"		
+	elseif message_id == hash("level_7")  then
+		msg.post(self.current_collection, "unload")
+		msg.post("#level_7", "load")
+		self.current_collection = "#level_7"
+	elseif message_id == hash("level_8")  then
+		msg.post(self.current_collection, "unload")
+		msg.post("#level_8", "load")
+		self.current_collection = "#level_8"
+	elseif message_id == hash("level_9")  then
+		msg.post(self.current_collection, "unload")
+		msg.post("#level_9", "load")
+		self.current_collection = "#level_9"		
+	elseif message_id == hash("level_test") then
+		msg.post(self.current_collection, "unload")
+		msg.post("#level_test", "load")
+		self.current_collection = "#level_test"
+		self.current_level = 0
+	end
+
+	
+	if message_id == hash("next_level") then
+		if self.current_collection == "#level_1" then
+			msg.post(".", "level_2")
+		end
+		if self.current_collection == "#level_2" then
+			msg.post(".", "level_3")
+		end
+		if self.current_collection == "#level_3" then
+			msg.post(".", "level_4")
+		end
+		if self.current_collection == "#level_4" then
+			msg.post(".", "level_5")
+		end
+		if self.current_collection == "#level_5" then
+			msg.post(".", "level_6")
+		end
+		if self.current_collection == "#level_6" then
+			msg.post(".", "level_7")
+		end
+		if self.current_collection == "#level_7" then
+			msg.post(".", "level_8")
+		end
+		if self.current_collection == "#level_8" then
+			msg.post(".", "level_9")
+		end
+		if self.current_collection == "#level_9" then
+			msg.post(".", "level_test")
+		end
+	end
+end
+
+function on_input(self, action_id, action)
+	-- Add input-handling code here. The game object this script is attached to
+	-- must have acquired input focus:
+	--
+	--    msg.post(".", "acquire_input_focus")
+	--
+	-- All mapped input bindings will be received. Mouse and touch input will
+	-- be received regardless of where on the screen it happened.
+	-- Learn more: https://defold.com/manuals/input/
+	-- Remove this function if not needed
+end
+
+function on_reload(self)
+	-- Add reload-handling code here
+	-- Learn more: https://defold.com/manuals/hot-reload/
+	-- Remove this function if not needed
+end

@@ -1,0 +1,20 @@
+name: "level_1"
+scale_along_z: 0
+embedded_instances {
+  id: "collectable_spawner"
+  data: "embedded_components {\n"
+  "  id: \"drink_factory\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/main/collectables/drink.go\\\"\\n"
+  "load_dynamically: true\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"present_factory\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/main/collectables/present.go\\\"\\n"
+  "load_dynamically: true\\n"
+  "\"\n"
+  "}\n"
+  ""
+}

@@ -1,0 +1,7 @@
+images {
+  image: "/graphics/company drink collectable 32px.png"
+}
+images {
+  image: "/graphics/present_collectable_32px.png"
+}
+extrude_borders: 2
